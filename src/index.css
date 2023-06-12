@@ -20,8 +20,31 @@ body {
 
 nav {
   border-bottom: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.title {
+  font-size: 3rem;
 }
 
 .clock {
   color: white;
+}
+
+.menu {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.menu li {
+  border: 1px solid black;
+  list-style: none;
 }
