@@ -14,6 +14,9 @@ export default function Navbar() {
                     <li>
                         Registry
                     </li>
+                    <li>
+                        Contributors
+                    </li>
                 </ul>
             </nav>
         </div>
