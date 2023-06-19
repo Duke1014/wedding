@@ -29,8 +29,8 @@ export default function Clock() {
     }
 
     return (
-        <div>
-            <p className = 'clock'>It has been {countdown} since Duke and Mo have been married!</p>
+        <div className='clock'>
+            <p className='pic-text'>Together for {countdown}!</p>
         </div>
     )
 }
