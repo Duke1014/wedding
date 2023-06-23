@@ -39,14 +39,19 @@ body, p {
   position: relative;
 }
 
-nav {
-  border-bottom: solid 1px black;
+nav {  
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: solid 1px black;
+  background-color: white;
   padding: 10px;
-  z-index: 10;
-  position: sticky;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4rem
 }
 
 .menu-icon {
@@ -77,21 +82,68 @@ nav {
   padding: 0;
   flex-wrap: nowrap;
   align-items: center;
-  left: 7rem;
-  position: relative;
+  top: 5.25rem;
+  right: -30rem;
+  position: absolute;
+  transition: right 1s ease-in-out;
 }
 
 .menu-on-screen {
-  left: 0;
+  right: 0;
 }
 
 .menu li {
-  /* border-bottom: 1px solid black; */
+  border-bottom: 1px solid black;
   list-style: none;
   overflow: hidden;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li:hover {
+  cursor: pointer;
+  background-color: #7eccf0;
 }
 
 .our-story-home,
 .contributors-home {
   background-color: #7eccf0;
+}
+
+.our-story-home,
+.contributors-home,
+.registry-home {
+  display: flex;
+}
+
+.our-story {
+  display: flex;
+  justify-content: space-between;
+}
+
+.duke-story {
+  width: 45%;
+  margin-left: 1rem;
+}
+
+.mo-story {
+  width: 45%
+}
+
+.together-story {
+  left:50%;
+  position:relative;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(font/Poppins-Regular.ttf) format('truetype');
+}
+
+.font-view {
+  font-family: Poppins-Regular, sans-serif !important;
 }

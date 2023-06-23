@@ -6,33 +6,36 @@ export default function Navbar() {
 
     const [menu, setMenu] = useState(false)
 
+    const handleScroll = (e) => {
+        let scroll = document.getElementById(e)
+        scroll.scrollIntoView({ behavior: 'smooth'})
+    }
+
     return (
-        <div>
-            <nav>
-                <span className='title'>
-                    Duke a la Mo
-                </span>
-                <FontAwesomeIcon 
-                    className='menu-icon'
-                    icon={faBars} 
-                    style={{color: "#0069e7",}} 
-                    onClick={() => setMenu(!menu)}
-                />
-                <ul className={menu ? 'menu menu-on-screen' : 'menu'}>
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        Our Story
-                    </li>
-                    <li>
-                        Registry
-                    </li>
-                    <li>
-                        Contributors
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <span className='title'>
+                Duke a la Mo
+            </span>
+            <FontAwesomeIcon 
+                className='menu-icon'
+                icon={faBars} 
+                style={{color: "#0069e7",}} 
+                onClick={() => setMenu(!menu)}
+            />
+            <ul className={menu ? 'menu menu-on-screen' : 'menu'}>
+                <li onClick={() => handleScroll('home')}>
+                    Home
+                </li>
+                <li onClick={() => handleScroll('our-story')}>
+                    Our Story
+                </li>
+                <li onClick={() => handleScroll('registry')}>
+                    Registry
+                </li>
+                <li onClick={() => handleScroll('contributors')}>
+                    Contributors
+                </li>
+            </ul>
+        </nav>
     )
 }
