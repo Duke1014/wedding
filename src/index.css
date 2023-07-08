@@ -32,7 +32,8 @@ body, p {
 
 .home-section {
   width: 100%;
-  height: 70vh;
+  min-height: 80vh;
+  height: fit-content;
 }
 
 .home p {
