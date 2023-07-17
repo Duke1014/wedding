@@ -1,5 +1,6 @@
 body, p {
   margin: 0;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -64,7 +65,7 @@ nav {
 }
 
 .title {
-  font-size: 40px;
+  font-size: 60px;
   font-family: DancingScript-VariableFont;
 }
 
@@ -129,15 +130,21 @@ nav {
 .duke-story {
   width: 45%;
   margin-left: 1rem;
+  font-family: Poppins-Regular, sans-serif !important;
+  font-size: 35px;
 }
 
 .mo-story {
-  width: 45%
+  width: 45%;
+  font-family: Poppins-Regular, sans-serif !important;
+  font-size: 35px;
 }
 
 .together-story {
-  left:50%;
+  left: 50%;
+  font-family: Poppins-Regular, sans-serif !important;
   position:relative;
+  font-size: 35px;
 }
 
 @font-face {
@@ -147,4 +154,66 @@ nav {
 
 .font-view {
   font-family: Poppins-Regular, sans-serif !important;
+  /* font-size: .1rem !important; */
+  font-size: 35px;
 }
+
+a img {
+  width: 20rem;
+  padding: 1rem;
+}
+
+/* h1 {
+  font-family: Poppins-Regular, sans-serif !important;
+} */
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 40px !important;
+  }
+  nav {
+    width: 100vw;
+    /* position: sticky; */
+  }
+  .pic-text {
+    font-size: 15px;
+  }
+  .start {
+    height: 25vh;
+  }
+  .duke-story,
+  .mo-story,
+  .together-story,
+  .font-view{
+    font-size: 1rem;
+  }
+  .home-section{
+    min-height: 1vh;
+  }
+
+}
+
+/* .our-story {
+  display: flex;
+  justify-content: space-between;
+}
+
+.duke-story {
+  width: 45%;
+  margin-left: 1rem;
+  font-family: Poppins-Regular, sans-serif !important;
+  font-size: 35px;
+}
+
+.mo-story {
+  width: 45%;
+  font-family: Poppins-Regular, sans-serif !important;
+  font-size: 35px;
+}
+
+.together-story {
+  left: 50%;
+  font-family: Poppins-Regular, sans-serif !important;
+  position:relative;
+  font-size: 35px;
+} */
