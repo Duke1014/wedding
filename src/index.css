@@ -190,6 +190,9 @@ a img {
   .home-section{
     min-height: 1vh;
   }
+  .home{
+    padding-top: 5rem;
+  }
 
 }
 
