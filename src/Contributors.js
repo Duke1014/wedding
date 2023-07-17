@@ -7,9 +7,9 @@ import lyndakavy from './img/lyndakavy.jpg'
 import artofthewood from './img/artofthewood.jpg'
 import elderearth from './img/elderearth.jpg'
 
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+// import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Contributors() {
 
