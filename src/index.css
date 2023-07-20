@@ -141,7 +141,8 @@ nav {
 }
 
 .together-story {
-  left: 50%;
+  left: 20%;
+  width: fit-content;
   font-family: Poppins-Regular, sans-serif !important;
   position:relative;
   font-size: 35px;
