@@ -10,7 +10,7 @@ export default function Clock() {
 
     const countdownCalc = () => {
         let wedding = new Date(2023, 6, 25)
-        let sign
+        let sign = ''
         wedding.setHours(11)
         let today = new Date()
         if (Math.sign(today - wedding) === -1) {
